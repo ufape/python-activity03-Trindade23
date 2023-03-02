@@ -25,7 +25,16 @@ Output(s):
 
 
 def main():
-    pass  # your code here
+  print("Série de Fibonacci")
+  print('=-=-=-=-=-=-=-=-=-\n')
+  fibonacci = [0, 1]
+  n = int(input("Digite o valor inteiro (0 < N < 46): "))
+  
+  for i in range(2, n):
+    fibonacci.append(fibonacci[i-1] + fibonacci[i-2])
+    
+    sequencia = ' '.join(str(num) for num in fibonacci)
+    print(f"A série de Fibonacci até {n} é: {sequencia}")
 
 
 if __name__ == '__main__':

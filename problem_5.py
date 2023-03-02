@@ -30,7 +30,15 @@ A sequência é: 1 2 3
 
 
 def main():
-    pass  # your code here
+  while(True):
+    x = int(input())
+    if x == 0:
+      break
+    
+  else:
+    seq = " ".join(str(i))
+    for i in range(1, x + 1):
+      print(f"A sequência é: {seq}")
 
 
 if __name__ == '__main__':

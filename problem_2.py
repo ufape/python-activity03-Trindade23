@@ -27,7 +27,12 @@ Imprima a tabuada de N, conforme o exemplo fornecido.
 
 
 def main():
-    pass  # your code here
+    n = int(input())
+    if n > 2 and n < 1000:
+      i = 1
+      while (i < 10 + 10):
+        print(i,"x", n, "=", (i * n))
+        i += 1
 
 
 if __name__ == '__main__':
